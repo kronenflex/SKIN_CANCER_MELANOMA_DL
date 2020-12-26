@@ -21,7 +21,7 @@ from wtfml.engine import Engine
 
 
 app = Flask(__name__)
-UPLOAD_FOLDER = "/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning/static"
+UPLOAD_FOLDER = "/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL/static"
 DEVICE = "cpu"
 MODEL = None
 

@@ -38,9 +38,9 @@ class SEResNext50_32x4d(nn.Module):
 
 
 def train(fold):
-    training_data_path = "/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning/input/jpeg/"
-    model_path = "/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning"
-    df = pd.read_csv("/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning/input/train_folds.csv")
+    training_data_path = "/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL/input/jpeg/"
+    model_path = "/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL"
+    df = pd.read_csv("/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL/input/train_folds.csv")
     device = "cuda"
     epochs = 50
     train_bs = 32
@@ -142,9 +142,9 @@ def train(fold):
 
 
 def predict(fold):
-    test_data_path = "/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning/input/jpeg/test224/"
-    model_path = "/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning"
-    df_test = pd.read_csv("/Users/DiegoIgnacioPavezOla/Desktop/melanoma-deep-learning/input/test.csv")
+    test_data_path = "/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL/input/jpeg/test224/"
+    model_path = "/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL"
+    df_test = pd.read_csv("/Users/DiegoIgnacioPavezOla/Desktop/SKIN_CANCER_MELANOMA_DL/input/test.csv")
     df_test.loc[:, "target"] = 0
 
     device = "cuda"
